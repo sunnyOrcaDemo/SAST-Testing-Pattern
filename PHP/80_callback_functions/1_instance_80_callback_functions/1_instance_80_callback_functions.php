@@ -4,6 +4,6 @@ function F($var) {
 }
 
 $a = $_GET["p1"]; // source
-$func = 'F'
+$func = 'F';
 $b = call_user_func($func, $a); // tarpit, $func is completely unknown
 echo $b; // sink
